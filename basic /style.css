@@ -1,0 +1,114 @@
+:root {
+  --base: #eb4d4b;
+  --white: #fff;
+  --base-font: 'Roboto', sans-serif;
+  --head-font: 'Abril Fatface', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* temp stuff */
+.bg-white {
+  background: var(--white);
+}
+
+/* For Mobile */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--base);
+  font-family: var(--base-font);
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr auto;
+  /* 1fr can take up as much space as it needs to */
+  /* min-height: 100vh; */
+  grid-template-areas:
+    'banner nav'
+    'main main'
+    'footer footer';
+}
+
+/* For larger than 40em */
+@media (min-width: 40em) {
+  body {
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  /* header {
+    grid-column: span 2;
+  }
+
+  nav {
+    grid-row: span 2;
+  } */
+}
+
+/* assigning grid area */
+
+@media (min-width: 40em) {
+  body {
+    grid-template-areas:
+      'banner banner'
+      'nav main'
+      'nav footer';
+  }
+}
+
+header {
+  grid-area: banner;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* headings */
+
+h1 {
+  font-family: var(--head-font);
+}
+
+h2 {
+  color: var(--white);
+}
+
+h3 {
+  font-family: var(--head-font);
+  color: var(--base);
+  background: var(--white);
+}
+
+h4 {
+  font-weight: 900;
+}
+
+/* lists */
+ul {
+  list-style-type: none;
+}
+
+/* nav */
+
+nav {
+
+}
+
+nav > ul {
+  padding: 0;
+  margin: 2rem;
+}
+
+#nav-svg {
+  fill: var(--base);
+  max-width: 5rem;
+}
