@@ -3,6 +3,7 @@
   --white: #fff;
   --base-font: 'Roboto', sans-serif;
   --head-font: 'Abril Fatface', cursive;
+  /* --head-font: 'Barlow'; */
 }
 
 * {
@@ -99,8 +100,18 @@ ul {
 
 /* nav */
 
-nav {
-
+.nav-menu {
+  list-style: none;
+  font-size: 30px;
+  color: black;
+  opacity: 0.7;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  &-item {
+    margin: 2rem;
+    position: relative;
+  }
 }
 
 nav > ul {
@@ -110,5 +121,36 @@ nav > ul {
 
 #nav-svg {
   fill: var(--base);
-  max-width: 5rem;
+  max-width: 3rem;
 }
+
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.circle:active,
+.circle:focus,
+.circle:hover {
+  background: var(--black);
+}
+
+#github {
+  color: var(--black);
+}
+
+#github:active,
+#github:focus,
+#github:hover {
+  color: var(--white);
+}
+
+

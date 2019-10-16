@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto&display=swap"
+      href="https://fonts.googleapis.com/css?family=Barlow|Abril+Fatface|Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <title>A CLASSIC CSS Grid LAYOUT</title>
   </head>
   <body>
@@ -16,10 +17,30 @@
       <h1>A CLASSIC CSS Grid LAYOUT</h1>
     </header>
     <nav class="bg-white">
-      <ul>
-        <li class="nav-links"><svg id="nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"/></svg></li>
+      <ul class="nav-menu">
+        <li class="nav-links">
+          <svg
+            id="nav-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"
+            />
+          </svg>
+        </li>
+        <li class="nav-links">
+          <a
+            class="social-link"
+            href="https://github.com/MoodyBones"
+            target="_blank"
+          >
+            <div class="circle">
+              <ion-icon id="github" name="logo-github"></ion-icon>
+            </div>
+          </a>
+        </li>
         <!-- <li class="nav-links">Nav</li>
-        <li class="nav-links">Nav</li>
         <li class="nav-links">Nav</li>
         <li class="nav-links">Nav</li> -->
       </ul>
